@@ -1,8 +1,9 @@
 package com.github.terentich.rssgenerator.service;
 
 import com.rometools.rome.io.FeedException;
-import org.springframework.stereotype.Service;
+
+import java.io.IOException;
 
 public interface RssGenerator {
-    String createRss(String url) throws FeedException;
+    String createRss(String url) throws FeedException, IOException;
 }
